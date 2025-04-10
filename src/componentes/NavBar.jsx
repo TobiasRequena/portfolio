@@ -34,7 +34,7 @@ const Navbar = () => {
       <a className='aExp' href="#experiencia">Experiencia</a>
       <a className='aPro' href="#proyectos">Proyectos</a>
       <a className='aSob' href="#sobremi">Sobre mí</a>
-      <a className='aCon' href="#contacto">Contacto</a>
+      <a className='aCon' href="https://wa.me/543534019186" target="_blank">Contacto</a>
     </div>
   );
 };

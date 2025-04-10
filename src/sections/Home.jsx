@@ -23,7 +23,7 @@ function Presentacion() {
                         onClick={() => window.open("https://www.linkedin.com/in/tobias-requena-800400262/")}
                         icon={<LinkedinOutlined/>}
                     />
-                    <a href="../../assets/TOBÍAS_REQUENA_FS.pdf" download>
+                    <a href="../../public/assets/TOBÍAS_REQUENA_FS.pdf" download>
                         <BotonAcc
                             texto={"Ver CV"}
                             icon={<DownloadOutlined />}

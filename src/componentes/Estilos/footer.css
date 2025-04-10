@@ -1,0 +1,20 @@
+.footer {
+  height: 80px;
+  width: 100%;
+  background-color: #69ae6d;
+
+  z-index: 100;
+
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+  gap: 20px;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 20px;
+
+  box-sizing: border-box;
+}

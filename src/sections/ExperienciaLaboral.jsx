@@ -19,6 +19,13 @@ const ExperienciaLaboral = () => {
       descripcion:
         'Desarrollaba y mantenía aplicaciones web en Angular, sobre todo ecommerces, colaborando con el equipo de desarrollo para implementar nuevas funcionalidades y mejorar la experiencia del usuario.',
     },
+    {
+      fecha: '2015 - 2024',
+      puesto: 'Encargado del área de producción',
+      empresa: 'Metalurgica Requena',
+      descripcion:
+        'Me encargaba del manejo de personal, control de stock, control de calidad y producción. Ademas de la atención al clientey distintos distribuidores de materias primas.',
+    }
   ];
 
   return (
