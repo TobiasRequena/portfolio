@@ -5,6 +5,7 @@ import Proyectos from './sections/Proyectos'
 import ExperienciaLaboral from './sections/ExperienciaLaboral'
 import SobreMi from './sections/SobreMi'
 import Footer from './componentes/Footer'
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         </div>
       </div> 
       <Footer nombre={"Tobías"}/>
+      <Analytics/>
     </>
 
 
