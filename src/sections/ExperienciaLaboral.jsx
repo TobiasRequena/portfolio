@@ -1,9 +1,9 @@
-import { Titulo } from '../componentes/Titulo';
+import Titulo from '../componentes/Titulo';
 import TimelineP from '../componentes/Timeline';
 import { FiBriefcase } from 'react-icons/fi';
 import './estilos/experiencia.css';
 
-export const ExperienciaLaboral = () => {
+const ExperienciaLaboral = () => {
   const experiencias = [
     {
       fecha: 'Actualmente...',
@@ -28,3 +28,5 @@ export const ExperienciaLaboral = () => {
     </div>
   );
 };
+
+export default ExperienciaLaboral;

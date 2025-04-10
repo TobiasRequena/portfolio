@@ -1,18 +1,21 @@
-.navbar{
-    position: fixed;
-    width: 680px;
-    height: 52px;
-    /* left: 363px; */
-    top: 25px;
+.navbar {
+  position: fixed;
+  width: 680px;
+  height: 52px;
+  top: 25px;
 
-    background: rgba(217, 217, 217, 0.69);
-    border-radius: 20px;
+  background: rgba(217, 217, 217, 0.69);
+  border-radius: 20px;
 
   display: flex;
   justify-content: space-around;
   align-items: center;
-
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .navbar a {
@@ -31,4 +34,21 @@
 .navbar a:hover {
   transform: scale(1.1);
   transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.navbar.hidden {
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none; /* para que el hover no dispare eventos cuando está oculta */
+}
+.navbar.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.navbar:hover {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  pointer-events: auto;
 }

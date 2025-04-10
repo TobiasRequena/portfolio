@@ -1,10 +1,10 @@
-import './estilos/sobremi.css';
+import './estilos/home.css';
 import BotonAcc from '../componentes/Boton';
 import {WhatsAppOutlined, LinkedinOutlined, DownloadOutlined } from "@ant-design/icons";
 
-function SobreMi() {
+function Presentacion() {
     return(
-        <div className="contenedorSobreMi" id='sobremi'>
+        <div className="contenedorPresentacion">
             <div className="imagenCont">
             </div>
             <div className="title-resumen-buttons">
@@ -35,4 +35,4 @@ function SobreMi() {
     )
 }
 
-export default SobreMi;
+export default Presentacion;

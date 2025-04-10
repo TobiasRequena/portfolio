@@ -1,7 +1,8 @@
 import './App.css'
 import NavBar from './componentes/NavBar'
-import SobreMi from './sections/SobreMi'
-import { ExperienciaLaboral } from './sections/ExperienciaLaboral'
+import Home from './sections/Home'
+import Proyectos from './sections/Proyectos'
+import ExperienciaLaboral from './sections/ExperienciaLaboral'
 
 function App() {
 
@@ -9,8 +10,9 @@ function App() {
     <div className="contenedorApp">
       <NavBar />
       <div className="contenido">
-        <SobreMi />
+        <Home />
         <ExperienciaLaboral/>
+        <Proyectos />
       </div>
     </div> 
   )

@@ -1,0 +1,64 @@
+.contenedorCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 20px; */
+    flex-direction: row;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 48px;
+    padding-top: 18px;
+}
+
+.contentTec{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    width: 35%;
+}
+
+.contentText{
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    height: 210px;
+    max-width: 600px;
+}
+.tecCard{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.descripcionCard{
+    font-size: 20px;
+    font-weight: 600;
+}
+.botonCard{
+    padding-top: 38px;
+}
+
+.tituloCard{
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFED5B;
+
+    margin: 0;
+    align-self: flex-start;
+}
+
+.contentImg{
+    display: flex;
+
+    width: 470px;
+    height: 210px;
+}
+
+.imgCard{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}

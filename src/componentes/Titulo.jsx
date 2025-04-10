@@ -1,6 +1,6 @@
 import './Estilos/titulo.css'
 
-export const Titulo = ({ text, icon}) => {
+const Titulo = ({ text, icon}) => {
     return (
         <div className="contenedorTitulo">
             <div className="iconoContenedor">
@@ -12,3 +12,5 @@ export const Titulo = ({ text, icon}) => {
         </div>
     )
 }
+
+export default Titulo;
