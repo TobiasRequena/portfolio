@@ -3,6 +3,7 @@ import NavBar from './componentes/NavBar'
 import Home from './sections/Home'
 import Proyectos from './sections/Proyectos'
 import ExperienciaLaboral from './sections/ExperienciaLaboral'
+import SobreMi from './sections/SobreMi'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <Home />
         <ExperienciaLaboral/>
         <Proyectos />
+        <SobreMi />
       </div>
     </div> 
   )

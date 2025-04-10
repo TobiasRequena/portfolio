@@ -1,59 +1,22 @@
-.contenedorSobreMi {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: row;
-  gap: 3rem;
-  padding: 3rem;
-  margin-top: 70px;
-  font-family: 'Raleway';
+.contenedorSobreMi{
+  padding-left: 48px;
 }
 
-.imagenCont {
-  width: 319px;
-  height: 363px;
-  border-radius: 111px 72px 159.5px 83px / 90px 60px 120px 100px;
-  background-image: url(../../../assets/profile1.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.title-resumen-buttons {
+.contentChamuyo{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  max-width: 700px;
-  gap: 1rem;
-  padding: 0;
-  margin: 0;
+  padding-top: 25px;
+  gap: 8px;
+  max-width: 800px;
 }
 
-
-.hola {
-  font-size: 64px;
-  font-weight: 700;
-  border-radius: 8px;
-  margin: 0; 
-  padding: 0;
-  line-height: 1.1;
-}
-
-.presentation {
-  font-size: 32px;
+.contenedorSobreMi p{
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
   font-weight: 600;
-  margin: 0; 
-  padding: 0;
-  line-height: 1.3;
 }
 
-
-.presentation span {
-  font-weight: bold;
-  color: #fef07e;
-}
-
-.buttons{
-  margin-top: 2.5rem;
+.contenedorSobreMi p strong{
+  font-weight: 700;
+  color: #FFED5B;
 }
