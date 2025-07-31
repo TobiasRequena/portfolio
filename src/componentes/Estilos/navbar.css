@@ -1,33 +1,31 @@
+/* Estilos para la versión de escritorio */
 .navbar {
   position: fixed;
   width: 680px;
   height: 52px;
   top: 25px;
-
   background: rgba(217, 217, 217, 0.69);
   border-radius: 20px;
-
   display: flex;
   justify-content: space-around;
   align-items: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-
   transition: opacity 0.4s ease, transform 0.4s ease;
   opacity: 1;
   pointer-events: auto;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .navbar a {
   text-decoration: none;
   transition: transform 0.2s ease;
-
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
-
   color: #000000;
 }
 
@@ -38,17 +36,40 @@
 
 .navbar.hidden {
   opacity: 0;
-  transform: translateY(-20px);
-  pointer-events: none; /* para que el hover no dispare eventos cuando está oculta */
+  transform: translateY(-20px) translateX(-50%);
+  pointer-events: none;
 }
 .navbar.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(0) translateX(-50%);
   pointer-events: auto;
 }
 
 .navbar:hover {
   opacity: 1 !important;
-  transform: translateY(0) !important;
+  transform: translateY(0) translateX(-50%) !important;
   pointer-events: auto;
+}
+
+/* ------------------------------------------------------------------ */
+/* --- MEDIA QUERIES --- */
+/* Estilos para pantallas de tablets y móviles (ancho máximo de 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    width: 90%; /* Ocupa casi todo el ancho disponible */
+    height: 45px;
+    top: 15px;
+    border-radius: 15px;
+    /* Para centrar en móviles, ya que el transform se ajusta */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .navbar a {
+    font-size: 14px; /* Reduce el tamaño de la fuente */
+  }
+
+  .home-icon {
+    display: none; /* Oculta el ícono de Home para ahorrar espacio */
+  }
 }

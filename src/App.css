@@ -1,23 +1,39 @@
-html{
+html {
   scroll-behavior: smooth;
-  margin:0;
-  padding: 0;
-}
-*{
-  margin:0;
-  padding:0;
-}
-
-.contenedorApp{
   margin: 0;
   padding: 0;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.contenedorApp {
+  margin: 0;
+  padding: 0;
+  
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column; /* Cambiamos a 'column' para que las secciones se apilen */
+  align-items: center; /* Centramos el contenido horizontalmente */
 
   height: 100%;
 
   background-color: rgba(113, 189, 118);
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px; /* O un valor que prefieras para limitar el ancho en pantallas grandes */
+}
+
+/* ------------------------------------------------------------------ */
+/* --- MEDIA QUERIES --- */
+/* No se necesitan media queries complejas aquí, ya que el diseño es adaptable por defecto */
+@media (max-width: 768px) {
+  .contenido {
+    width: 100%;
+  }
 }

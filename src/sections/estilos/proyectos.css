@@ -2,3 +2,10 @@
     padding-left: 48px;
 
 }
+
+/* Agrega esta media query a tu archivo './estilos/proyectos.css' */
+@media (max-width: 768px) {
+  .contenedorProyectos {
+    padding: 0 20px; /* Padding horizontal para móviles */
+  }
+}

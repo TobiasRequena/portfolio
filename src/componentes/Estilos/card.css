@@ -1,74 +1,123 @@
-.contenedorCard{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* margin: 20px; */
-    flex-direction: row;
-    font-family: 'Raleway', sans-serif;
-    padding-bottom: 48px;
-    padding-top: 18px;
+/* Estilos por defecto para escritorio (no cambian) */
+.contenedorCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  font-family: 'Raleway', sans-serif;
+  padding-bottom: 48px;
+  padding-top: 18px;
 }
 
-.contentTec{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-
-    width: 35%;
+.contentTec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 35%;
 }
 
-.contentText{
-    display: flex;
-    align-items: start;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 12px;
-    height: 210px;
-    max-width: 585px;
+.contentText {
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 12px;
+  height: 210px;
+  max-width: 585px;
 }
-.tecCard{
-    font-weight: 600;
+
+.tecCard {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.descripcionCard {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.botonCard {
+  padding-top: 21px;
+}
+
+.tituloCard {
+  font-size: 32px;
+  font-weight: bold;
+  color: #FFED5B;
+  margin: 0;
+  align-self: flex-start;
+}
+
+.contentImg {
+  display: flex;
+  width: 500px;
+  height: 223.4px;
+  background-image: url(../../assets/sodap.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.6s ease;
+}
+
+.imgCard {
+  border-radius: 10px;
+  width: 100%; /* Asegura que la imagen ocupe el 100% del contenedor */
+  height: auto; /* Mantiene la proporción */
+}
+
+/* ------------------------------------------------------------------ */
+/* --- MEDIA QUERIES --- */
+/* Estilos para pantallas de tablets y móviles (ancho máximo de 768px) */
+@media (max-width: 768px) {
+  .contenedorCard {
+    flex-direction: column; /* Apila el texto y la imagen verticalmente */
+    text-align: center;
+    gap: 2rem;
+    padding-bottom: 30px;
+  }
+
+  .contentText {
+    align-items: center; /* Centra el contenido del texto */
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .contentTec {
+    justify-content: center; /* Centra las tecnologías */
+    width: 100%;
+    gap: 10px;
+  }
+
+  .tituloCard {
+    font-size: 24px;
+    align-self: center; /* Centra el título */
+  }
+
+  .descripcionCard {
     font-size: 16px;
-}
+    padding: 0 10px;
+    text-align: center;
+  }
 
-.descripcionCard{
-    font-size: 20px;
-    font-weight: 600;
-}
-.botonCard{
-    padding-top: 21px;
-}
+  .contentImg {
+    width: 100%; /* La imagen ocupa todo el ancho disponible */
+    height: auto; /* Altura automática para mantener la proporción */
+  }
 
-.tituloCard{
-    font-size: 32px;
-    font-weight: bold;
-    color: #FFED5B;
+  .imgCard {
+    width: 100%;
+  }
+  
+  .contentImg:hover {
+    transform: none; /* Desactiva la animación al hacer hover en móviles */
+    cursor: default;
+  }
 
-    margin: 0;
-    align-self: flex-start;
-}
-
-.contentImg{
-    display: flex;
-
-    width: 500px;
-    height: 223.4px;
-
-    /* background-image: url(../../assets/sodap.jpg); */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.6s ease;
-}
-
-.contentImg:hover{
-    transform: scale(1.2);
-    cursor: pointer;
-}
-
-.imgCard{
-    border-radius: 10px;
+  .botonCard {
+    padding-top: 0;
+  }
 }

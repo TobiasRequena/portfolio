@@ -1,5 +1,5 @@
 import Titulo from '../componentes/Titulo';
-import TimelineP from '../componentes/Timeline';
+import Timeline from '../componentes/Timeline';
 import { FiBriefcase } from 'react-icons/fi';
 import './estilos/experiencia.css';
 
@@ -31,7 +31,7 @@ const ExperienciaLaboral = () => {
   return (
     <div className='contenedorExperienciaLaboral' id='experiencia'>
       <Titulo text={'Experiencia laboral'} icon={<FiBriefcase />} />
-      <TimelineP experiencias={experiencias} />
+      <Timeline experiencias={experiencias} />
     </div>
   );
 };

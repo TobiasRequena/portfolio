@@ -11,7 +11,7 @@ function Presentacion() {
             <div className="title-resumen-buttons">
                 <h1 className='hola'>Hola, soy Tobías!</h1>
                 <p className='presentation'>
-                    +6 meses de experiencia. <span>Desarrollador Web Frontend</span>. Especializado en la creación de webs únicas.
+                    Más de 1 año de experiencia. <span>Desarrollador Web Frontend</span>. Especializado en la creación de webs únicas.
                 </p>
                 <div className="buttons" style={{display: "flex", gap: "10px"}}>
                     <BotonAcc

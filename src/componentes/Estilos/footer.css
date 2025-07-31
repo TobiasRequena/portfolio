@@ -1,20 +1,29 @@
+/* Estilos para la versión de escritorio */
 .footer {
-  height: 80px;
-  width: 100%;
+  width: 100%; /* Asegura que ocupe todo el ancho */
   background-color: #69ae6d;
-
   z-index: 100;
-
   display: flex;
   justify-content: center;
-  align-items: end;
-
+  align-items: center;
   gap: 20px;
-
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   font-weight: 500;
-  padding-bottom: 20px;
-
+  padding: 20px; /* Un padding para asegurar espacio arriba y abajo */
   box-sizing: border-box;
+}
+
+/* ------------------------------------------------------------------ */
+/* --- MEDIA QUERIES --- */
+/* Estilos para pantallas de tablets y móviles (ancho máximo de 768px) */
+@media (max-width: 768px) {
+  .footer {
+    height: auto;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    text-align: center;
+    gap: 5px;
+    padding: 15px; /* Padding para móviles */
+    font-size: 14px;
+  }
 }
